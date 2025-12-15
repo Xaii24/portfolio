@@ -254,25 +254,6 @@ VANTA.FOG({
     });
   }
 
-  // Resume button animation + sound
-  const resumeBtn = document.getElementById('resume-button');
-  if (resumeBtn) {
-    resumeBtn.addEventListener('click', () => {
-      // 🔊 Play new2.mp3
-      if (resumeContactSound) {
-        resumeContactSound.currentTime = 0;
-        resumeContactSound.play();
-      }
 
-      resumeBtn.classList.add('pulse-boom');
-      resumeBtn.addEventListener('animationend', () => {
-        resumeBtn.classList.remove('pulse-boom');
-        window.open(
-          'https://github.com/Xaii24/Resume/raw/main/Resume.pdf',
-          '_blank'
-        );
-      }, { once: true });
-    });
-  }
 </script>
 
