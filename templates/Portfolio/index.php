@@ -2,12 +2,16 @@
   <div class="text--custom4 tracking-in-contract-bck-top">Xaivery Rusconi</div>
   <div class="text--custom10 tracking-in-contract-bck-top">iOS • Web Apps</div>
 
-  <div
-    id="resume-button"
-    class="text--custom5 tracking-in-contract-bck-top hover-underline-animation"
-  >
-    Resume
-  </div>
+ <a
+  href="/resume/Xaivery_Rusconi_Resume.pdf"
+  target="_blank"
+  rel="noopener noreferrer"
+  id="resume-button"
+  class="text--custom5 tracking-in-contract-bck-top hover-underline-animation"
+>
+  Resume
+</a>
+
 
   <?= $this->Html->link(
       '<span class="text--custom3 tracking-in-contract-bck-top hover-underline-animation">Contact</span>',
