@@ -99,7 +99,7 @@
       />
       <h3>🌐 M+D Global</h3>
       <p>
-        Full-stack medical supplies inventory management system.
+        Full-stack medical supplies inventory management system.<br>
         <span class="project-stack">CakePHP • MySQL</span>
       </p>
       <div class="project-link-btn"></div>
@@ -118,7 +118,7 @@
       />
       <h3>🌐 DragonMovingCo.</h3>
       <p>
-        Professional moving service web app with booking, quote requests, and responsive design.
+        Professional moving service web app with booking, quote requests, and responsive design.<br>
         <span class="project-stack">CakePHP • MySQL</span>
       </p>
       <div class="project-link-btn"></div>
@@ -137,7 +137,7 @@
       />
       <h3>🌐 GameZone</h3>
       <p>
-        Video game review website with articles, likes, and comments.
+        Video game review website with articles, likes, and comments.<br>
         <span class="project-stack">CakePHP • MySQL</span>
       </p>
       <div class="project-link-btn"></div>
