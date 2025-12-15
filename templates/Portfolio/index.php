@@ -29,7 +29,7 @@
   <!-- Encrypta Chat -->
   <a href="https://apps.apple.com/us/app/encrypta-chat/id6480382145" target="_blank" style="text-decoration: none;">
     <div class="project-entry portrait">
-      <img src="img/spotlight120.png" />
+      <img src="img/spotlight120.jpg" />
       <h3>📱 Encrypta Chat</h3>
       <p>E2EE chat app with group msgs, push notifications, badge counts & more.
       <span class="project-stack">SwiftUI • Firebase</span>
@@ -43,7 +43,7 @@
    target="_blank" 
    style="text-decoration: none;">
   <div class="project-entry">
-    <img src="img/menu.png" alt="Restaurant Ordering System Screenshot" />
+    <img src="img/menu.jpg" alt="Restaurant Ordering System Screenshot" />
     <h3>🌐 Restaurant Ordering System</h3>
     <p>
 Online ordering system with Stripe integration and live order updates.
@@ -60,7 +60,7 @@ Online ordering system with Stripe integration and live order updates.
    target="_blank"
    style="text-decoration: none;">
   <div class="project-entry">
-    <img src="img/dashboard.png" alt="Restaurant Admin Dashboard Screenshot" />
+    <img src="img/dashboard.jpg" alt="Restaurant Admin Dashboard Screenshot" />
     <h3>🌐 Restaurant Admin Dashboard</h3>
     <p>
       Administrative dashboard for managing orders, menus, and live order status.
@@ -76,7 +76,7 @@ Online ordering system with Stripe integration and live order updates.
     <!-- M+D Global -->
   <a href="https://globalmd-8141014c0210.herokuapp.com/" target="_blank" style="text-decoration: none;">
     <div class="project-entry">
-      <img src="img/global1.png" alt="Global Connect Screenshot" />
+      <img src="img/global1.jpg" alt="Global Connect Screenshot" />
       <h3>🌐 M+D Global</h3>
       <p>Full-stack medical supplies inventory management system.<br>
           <span class="project-stack">CakePHP • MySQL</span>
@@ -88,7 +88,7 @@ Online ordering system with Stripe integration and live order updates.
   <!--  Dragon Moving -->
   <a href="https://mover-site1-05c02c66f60b.herokuapp.com/" target="_blank" style="text-decoration: none;">
     <div class="project-entry">
-      <img src="img/dragon.png" alt="Dragon Moving Screenshot" />
+      <img src="img/dragon.jpg" alt="Dragon Moving Screenshot" />
       <h3>🌐 DragonMovingCo.</h3>
       <p>Professional moving service web app with booking, quote requests, and responsive design.<br>
           <span class="project-stack">CakePHP • MySQL</span>
@@ -102,7 +102,7 @@ Online ordering system with Stripe integration and live order updates.
  <!-- GameZone -->
   <a href="https://gamezone-new123-3f3bf09999fc.herokuapp.com/" target="_blank" style="text-decoration: none;">
     <div class="project-entry">
-      <img class="zoom" src="img/gamezone1.png" alt="GameZone Screenshot" />
+      <img class="zoom" src="img/gamezone1.jpg" alt="GameZone Screenshot" />
       <h3>🌐 GameZone</h3>
       <p>Video game review website where users can post articles, like articles, and comment on articles.<br>
           <span class="project-stack">CakePHP • MySQL</span>
