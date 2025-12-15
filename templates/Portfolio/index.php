@@ -1,6 +1,6 @@
 <div class="top-bar">
   <div class="text--custom4 tracking-in-contract-bck-top">Xaivery Rusconi</div>
-  <div class="text--custom10 tracking-in-contract-bck-top">iOS • Web • Apps</div>
+  <div class="text--custom10 tracking-in-contract-bck-top">iOS • Web Apps</div>
 
   <div
     id="resume-button"
@@ -31,37 +31,68 @@
     <div class="project-entry portrait">
       <img src="img/spotlight120.png" />
       <h3>📱 Encrypta Chat</h3>
-      <p>E2EE chat app with group msgs, push notifications, badge counts & more.<br>SwiftUI + Firebase.</p>
+      <p>E2EE chat app with group msgs, push notifications, badge counts & more.
+      <span class="project-stack">SwiftUI • Firebase</span>
+</p>
       <div class="project-link-btn"></div>
     </div>
   </a>
 
-  <!-- Watch Trade -->
-  <a href="https://apps.apple.com/us/app/encrypta-chat/id6480382145" target="_blank" style="text-decoration: none;">
-    <div class="project-entry portrait">
-      <img src="img/Congress.png" />
-      <h3>📱 WatchTrade</h3>
-      <p>E2EE chat app with group msgs, push notifications, badge counts & more.<br>SwiftUI + Firebase.</p>
-      <div class="project-link-btn"></div>
-    </div>
-  </a>
+ <!-- Restaurant Ordering System -->
+<a href="https://restaurant-demo-c7241141b329.herokuapp.com/menu" 
+   target="_blank" 
+   style="text-decoration: none;">
+  <div class="project-entry">
+    <img src="img/menu.png" alt="Restaurant Ordering System Screenshot" />
+    <h3>🌐 Restaurant Ordering System</h3>
+    <p>
+Online ordering system with Stripe integration and live order updates.
+  <span class="project-stack">CakePHP • MySQL</span>
+
+    </p>
+    <div class="project-link-btn"></div>
+  </div>
+</a>
+
+
+<!-- Restaurant Admin Dashboard -->
+<a href="https://restaurant-demo-c7241141b329.herokuapp.com/dashboard"
+   target="_blank"
+   style="text-decoration: none;">
+  <div class="project-entry">
+    <img src="img/dashboard.png" alt="Restaurant Admin Dashboard Screenshot" />
+    <h3>🌐 Restaurant Admin Dashboard</h3>
+    <p>
+      Administrative dashboard for managing orders, menus, and live order status.
+        <span class="project-stack">CakePHP • MySQL</span>
+
+    </p>
+    <div class="project-link-btn"></div>
+  </div>
+</a>
+
+
 
     <!-- M+D Global -->
   <a href="https://globalmd-8141014c0210.herokuapp.com/" target="_blank" style="text-decoration: none;">
     <div class="project-entry">
       <img src="img/global1.png" alt="Global Connect Screenshot" />
       <h3>🌐 M+D Global</h3>
-      <p>Full-stack medical supplies inventory management system.<br>CakePHP + MySQL.</p>
+      <p>Full-stack medical supplies inventory management system.<br>
+          <span class="project-stack">CakePHP • MySQL</span>
+
       <div class="project-link-btn"></div>
     </div>
   </a>
-  
+
   <!--  Dragon Moving -->
   <a href="https://mover-site1-05c02c66f60b.herokuapp.com/" target="_blank" style="text-decoration: none;">
     <div class="project-entry">
       <img src="img/dragon.png" alt="Dragon Moving Screenshot" />
       <h3>🌐 DragonMovingCo.</h3>
-      <p>Professional moving service web app with booking, quote requests, and responsive design.<br>CakePHP + MySQL.</p>
+      <p>Professional moving service web app with booking, quote requests, and responsive design.<br>
+          <span class="project-stack">CakePHP • MySQL</span>
+</p>
       <div class="project-link-btn"></div>
     </div>
   </a>
@@ -73,21 +104,15 @@
     <div class="project-entry">
       <img class="zoom" src="img/gamezone1.png" alt="GameZone Screenshot" />
       <h3>🌐 GameZone</h3>
-      <p>Video game review website where users can post articles, like articles, and comment on articles.<br>CakePHP + MySQL.</p>
+      <p>Video game review website where users can post articles, like articles, and comment on articles.<br>
+          <span class="project-stack">CakePHP • MySQL</span>
+      </p>
       <div class="project-link-btn"></div>
     </div>
   </a>
 
 
- <!-- Portfolio Site -->
-<a href="https://yourportfolio.com" target="_blank" style="text-decoration: none;">
-  <div class="project-entry">
-    <img src="img/personal.png" alt="Portfolio Screenshot" />
-    <h3>🌐 Personal Portfolio</h3>
-    <p>Custom-coded portfolio built from scratch to showcase projects and design skills.<br>CakePHP + Mysql + JavaScript.</p>
-    <div class="project-link-btn"></div>
-  </div>
-</a>
+
 
 </section>
 
