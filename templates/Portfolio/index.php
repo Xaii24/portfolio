@@ -29,92 +29,118 @@
   <!-- Encrypta Chat -->
   <a href="https://apps.apple.com/us/app/encrypta-chat/id6480382145" target="_blank" style="text-decoration: none;">
     <div class="project-entry portrait">
-      <img src="img/spotlight120.jpg" />
+      <img
+        data-src="img/spotlight120.jpg"
+        class="lazy-img"
+        alt="Encrypta Chat Screenshot"
+        loading="lazy"
+        decoding="async"
+      />
       <h3>📱 Encrypta Chat</h3>
-      <p>E2EE chat app with group msgs, push notifications, badge counts & more.
-      <span class="project-stack">SwiftUI • Firebase</span>
-</p>
-      <div class="project-link-btn"></div>
-    </div>
-  </a>
-
- <!-- Restaurant Ordering System -->
-<a href="https://restaurant-demo-c7241141b329.herokuapp.com/menu" 
-   target="_blank" 
-   style="text-decoration: none;">
-  <div class="project-entry">
-    <img src="img/menu.jpg" alt="Restaurant Ordering System Screenshot" />
-    <h3>🌐 Restaurant Ordering System</h3>
-    <p>
-Online ordering system with Stripe integration and live order updates.
-  <span class="project-stack">CakePHP • MySQL</span>
-
-    </p>
-    <div class="project-link-btn"></div>
-  </div>
-</a>
-
-
-<!-- Restaurant Admin Dashboard -->
-<a href="https://restaurant-demo-c7241141b329.herokuapp.com/dashboard"
-   target="_blank"
-   style="text-decoration: none;">
-  <div class="project-entry">
-    <img src="img/dashboard.jpg" alt="Restaurant Admin Dashboard Screenshot" />
-    <h3>🌐 Restaurant Admin Dashboard</h3>
-    <p>
-      Administrative dashboard for managing orders, menus, and live order status.
-        <span class="project-stack">CakePHP • MySQL</span>
-
-    </p>
-    <div class="project-link-btn"></div>
-  </div>
-</a>
-
-
-
-    <!-- M+D Global -->
-  <a href="https://globalmd-8141014c0210.herokuapp.com/" target="_blank" style="text-decoration: none;">
-    <div class="project-entry">
-      <img src="img/global1.jpg" alt="Global Connect Screenshot" />
-      <h3>🌐 M+D Global</h3>
-      <p>Full-stack medical supplies inventory management system.<br>
-          <span class="project-stack">CakePHP • MySQL</span>
-
-      <div class="project-link-btn"></div>
-    </div>
-  </a>
-
-  <!--  Dragon Moving -->
-  <a href="https://mover-site1-05c02c66f60b.herokuapp.com/" target="_blank" style="text-decoration: none;">
-    <div class="project-entry">
-      <img src="img/dragon.jpg" alt="Dragon Moving Screenshot" />
-      <h3>🌐 DragonMovingCo.</h3>
-      <p>Professional moving service web app with booking, quote requests, and responsive design.<br>
-          <span class="project-stack">CakePHP • MySQL</span>
-</p>
-      <div class="project-link-btn"></div>
-    </div>
-  </a>
-
-
-
- <!-- GameZone -->
-  <a href="https://gamezone-new123-3f3bf09999fc.herokuapp.com/" target="_blank" style="text-decoration: none;">
-    <div class="project-entry">
-      <img class="zoom" src="img/gamezone1.jpg" alt="GameZone Screenshot" />
-      <h3>🌐 GameZone</h3>
-      <p>Video game review website where users can post articles, like articles, and comment on articles.<br>
-          <span class="project-stack">CakePHP • MySQL</span>
+      <p>
+        E2EE chat app with group msgs, push notifications, badge counts & more.
+        <span class="project-stack">SwiftUI • Firebase</span>
       </p>
       <div class="project-link-btn"></div>
     </div>
   </a>
 
+  <!-- Restaurant Ordering System -->
+  <a href="https://restaurant-demo-c7241141b329.herokuapp.com/menu" target="_blank" style="text-decoration: none;">
+    <div class="project-entry">
+      <img
+        data-src="img/menu.jpg"
+        class="lazy-img"
+        alt="Restaurant Ordering System Screenshot"
+        loading="lazy"
+        decoding="async"
+      />
+      <h3>🌐 Restaurant Ordering System</h3>
+      <p>
+        Online ordering system with Stripe integration and live order updates.
+        <span class="project-stack">CakePHP • MySQL</span>
+      </p>
+      <div class="project-link-btn"></div>
+    </div>
+  </a>
 
+  <!-- Restaurant Admin Dashboard -->
+  <a href="https://restaurant-demo-c7241141b329.herokuapp.com/dashboard" target="_blank" style="text-decoration: none;">
+    <div class="project-entry">
+      <img
+        data-src="img/dashboard.jpg"
+        class="lazy-img"
+        alt="Restaurant Admin Dashboard Screenshot"
+        loading="lazy"
+        decoding="async"
+      />
+      <h3>🌐 Restaurant Admin Dashboard</h3>
+      <p>
+        Administrative dashboard for managing orders, menus, and live order status.
+        <span class="project-stack">CakePHP • MySQL</span>
+      </p>
+      <div class="project-link-btn"></div>
+    </div>
+  </a>
 
+  <!-- M+D Global -->
+  <a href="https://globalmd-8141014c0210.herokuapp.com/" target="_blank" style="text-decoration: none;">
+    <div class="project-entry">
+      <img
+        data-src="img/global1.jpg"
+        class="lazy-img"
+        alt="M+D Global Screenshot"
+        loading="lazy"
+        decoding="async"
+      />
+      <h3>🌐 M+D Global</h3>
+      <p>
+        Full-stack medical supplies inventory management system.
+        <span class="project-stack">CakePHP • MySQL</span>
+      </p>
+      <div class="project-link-btn"></div>
+    </div>
+  </a>
 
+  <!-- Dragon Moving -->
+  <a href="https://mover-site1-05c02c66f60b.herokuapp.com/" target="_blank" style="text-decoration: none;">
+    <div class="project-entry">
+      <img
+        data-src="img/dragon.jpg"
+        class="lazy-img"
+        alt="Dragon Moving Screenshot"
+        loading="lazy"
+        decoding="async"
+      />
+      <h3>🌐 DragonMovingCo.</h3>
+      <p>
+        Professional moving service web app with booking, quote requests, and responsive design.
+        <span class="project-stack">CakePHP • MySQL</span>
+      </p>
+      <div class="project-link-btn"></div>
+    </div>
+  </a>
+
+  <!-- GameZone -->
+  <a href="https://gamezone-new123-3f3bf09999fc.herokuapp.com/" target="_blank" style="text-decoration: none;">
+    <div class="project-entry">
+      <img
+        data-src="img/gamezone1.jpg"
+        class="lazy-img zoom"
+        alt="GameZone Screenshot"
+        loading="lazy"
+        decoding="async"
+      />
+      <h3>🌐 GameZone</h3>
+      <p>
+        Video game review website with articles, likes, and comments.
+        <span class="project-stack">CakePHP • MySQL</span>
+      </p>
+      <div class="project-link-btn"></div>
+    </div>
+  </a>
 </section>
+
 
 
 <!-- Background -->
@@ -149,7 +175,6 @@ VANTA.FOG({
 </script>
 
 
-
 <!-- Main interaction scripts -->
 <script>
   const btn = document.getElementById('project-btn');
@@ -157,9 +182,23 @@ VANTA.FOG({
   const clickSound = document.getElementById('mySound');
   const resumeContactSound = document.getElementById('resumeContactSound');
 
+  // Prevent loading images more than once
+  let projectsLoaded = false;
+
   // Projects button logic
   if (btn) {
     btn.addEventListener('click', () => {
+
+      // 🚀 Load project images ONLY when Projects is clicked
+      if (!projectsLoaded) {
+        document.querySelectorAll('.lazy-img').forEach(img => {
+          if (!img.src) {
+            img.src = img.dataset.src;
+          }
+        });
+        projectsLoaded = true;
+      }
+
       // 🔊 Play sound
       if (clickSound) {
         clickSound.currentTime = 0;
@@ -167,7 +206,7 @@ VANTA.FOG({
       }
 
       document.querySelectorAll('#project-section a').forEach(card => {
-        card.addEventListener('click', (e) => {
+        card.addEventListener('click', () => {
           const sound = document.getElementById('projectClickSound');
           if (sound) {
             sound.currentTime = 0;
@@ -224,8 +263,12 @@ VANTA.FOG({
       resumeBtn.classList.add('pulse-boom');
       resumeBtn.addEventListener('animationend', () => {
         resumeBtn.classList.remove('pulse-boom');
-        window.open('https://github.com/Xaii24/Resume/raw/main/Resume.pdf', '_blank');
+        window.open(
+          'https://github.com/Xaii24/Resume/raw/main/Resume.pdf',
+          '_blank'
+        );
       }, { once: true });
     });
   }
 </script>
+
