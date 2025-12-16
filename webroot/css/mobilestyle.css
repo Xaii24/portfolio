@@ -39,16 +39,6 @@
             opacity: 0;
         }
     }
-    /* Mobile tap glow for Projects button */
-    .text--customprojects.tap-glow {
-        transform: translateX(-50%) translateY(-6px);
-        box-shadow:
-            0 0 25px rgba(0, 255, 255, 0.9),
-            0 0 50px rgba(0, 255, 255, 0.6),
-            inset 0 6px 10px rgba(255, 255, 255, 0.95),
-            inset 0 -6px 10px rgba(0, 0, 0, 0.18);
-    }
-
     .text--customprojects {
         position: absolute;
         top: 38%;
@@ -134,7 +124,7 @@
         padding: 0 20px;
         margin-top: 220px;
         margin-right: -35px;
-        margin-left: 30px;
+        margin-left: 28px;
         justify-items: start; /* 👈 Align items to the left */
     }
 }
