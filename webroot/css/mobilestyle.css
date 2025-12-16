@@ -1,7 +1,7 @@
 @media screen and (max-width: 430px) {
     .text--customprojects {
         position: absolute;
-        top: 37%;
+        top: 38%;
         left: 50%;
         transform: translateX(-50%);
         padding: 30px 100px;
