@@ -352,7 +352,7 @@ body.glow-once::before {
     max-width: 1200px;
     margin: 80px auto;
     padding: 0 20px;
-    margin-top: 130px;
+    margin-top: 90px;
     margin-right: -35px;
     justify-items: start; /* 👈 Align items to the left */
 }
