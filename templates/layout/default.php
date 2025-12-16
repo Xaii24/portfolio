@@ -29,6 +29,8 @@
 
     <!-- Load style.css from webroot/css/style.css -->
     <?= $this->Html->css('style') ?>
+        <?= $this->Html->css('mobilestyle') ?>
+
 
     <!-- Allow views to add their own CSS files -->
     <?= $this->fetch('css') ?>

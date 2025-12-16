@@ -11,8 +11,6 @@
 >
   Resume
 </a>
-
-
   <?= $this->Html->link(
       '<span class="text--custom3 tracking-in-contract-bck-top hover-underline-animation">Contact</span>',
       'mailto:xaiveryr@outlook.com',
