@@ -108,7 +108,7 @@
     }
 
     .top-bar {
-        position: absolute;
+        position: relative;
         top: 0;
         margin-left: -40px;
         width: 40%;
@@ -130,9 +130,10 @@
         max-width: 1200px;
         margin: 80px auto;
         padding: 0 20px;
-        margin-top: 220px;
+        margin-top: 0px;
         margin-right: -35px;
         margin-left: 26px;
         justify-items: start; /* 👈 Align items to the left */
+        z-index: 3; /* higher than top-bar */
     }
 }
