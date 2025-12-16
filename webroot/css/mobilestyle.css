@@ -4,7 +4,7 @@
         top: 35%;
         left: 50%;
         transform: translateX(-50%);
-        padding: 30px 110px;
+        padding: 30px 100px;
         border-radius: 50px;
         font-size: 3.5em;
         font-family: 'Rajdhani', sans-serif;
@@ -54,7 +54,7 @@
         padding: 0 20px;
         margin-top: 220px;
         margin-right: -35px;
-        margin-left: 40px;
+        margin-left: 30px;
         justify-items: start; /* 👈 Align items to the left */
     }
 }
