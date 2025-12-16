@@ -188,44 +188,38 @@ VANTA.FOG({
   let projectsLoaded = false;
 
   // Projects button logic
-  if (btn) {
-    btn.addEventListener('click', () => {
+if (btn) {
+  btn.addEventListener('click', () => {
 
-      // 🚀 Load project images ONLY when Projects is clicked
-      if (!projectsLoaded) {
-        document.querySelectorAll('.lazy-img').forEach(img => {
-          if (!img.src) {
-            img.src = img.dataset.src;
-          }
-        });
-        projectsLoaded = true;
-      }
+    // 🔥 Mobile-safe button glow
+    btn.classList.remove('tap-glow');
+    void btn.offsetWidth; // force reflow
+    btn.classList.add('tap-glow');
 
-      // 🔊 Play sound
-      if (clickSound) {
-        clickSound.currentTime = 0;
-        clickSound.play();
-      }
-
-      document.querySelectorAll('#project-section a').forEach(card => {
-        card.addEventListener('click', () => {
-          const sound = document.getElementById('projectClickSound');
-          if (sound) {
-            sound.currentTime = 0;
-            sound.play();
-          }
-        });
+    // 🚀 Load project images ONLY once
+    if (!projectsLoaded) {
+      document.querySelectorAll('.lazy-img').forEach(img => {
+        if (!img.src) img.src = img.dataset.src;
       });
+      projectsLoaded = true;
+    }
 
-      // 🔄 Animation and show section
-      btn.classList.add('neon-pulse');
-      setTimeout(() => {
-        btn.style.display = 'none';
-        projectSection.classList.remove('hidden');
-        projectSection.classList.add('visible');
-      }, 700);
-    });
-  }
+    // 🔊 Play sound
+    if (clickSound) {
+      clickSound.currentTime = 0;
+      clickSound.play();
+    }
+
+    btn.classList.add('neon-pulse');
+
+    setTimeout(() => {
+      btn.style.display = 'none';
+      projectSection.classList.remove('hidden');
+      projectSection.classList.add('visible');
+    }, 700);
+  });
+}
+
 
   // Contact link animation + sound
   const contactLink = document.getElementById('contact-link');
@@ -251,6 +245,28 @@ VANTA.FOG({
       }
     });
   }
+
+  // Resume link sound + delayed open
+const resumeBtn = document.getElementById('resume-button');
+if (resumeBtn) {
+  resumeBtn.addEventListener('click', (e) => {
+    e.preventDefault();
+
+    if (resumeContactSound) {
+      resumeContactSound.currentTime = 0;
+      resumeContactSound.play();
+    }
+
+    // Small delay so sound actually plays
+    setTimeout(() => {
+      window.open(
+        resumeBtn.href,
+        "_blank",
+        "noopener,noreferrer"
+      );
+    }, 120);
+  });
+}
 
 
 </script>

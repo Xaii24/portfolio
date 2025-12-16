@@ -1,4 +1,54 @@
 @media screen and (max-width: 430px) {
+    body::before {
+        content: '';
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        pointer-events: none;
+        box-shadow:
+            0 0 10px #0ff,
+            inset 0 0 60px #0ff;
+        z-index: 9999;
+        opacity: 0;
+        transition: opacity 0.5s ease-in-out;
+    }
+
+    body.glow-once::before {
+        opacity: 1;
+        animation: glow-pulse-once 1.6s ease forwards;
+    }
+    @keyframes glow-pulse-once {
+        0% {
+            box-shadow:
+                0 0 0px #0ff,
+                inset 0 0 0px #0ff;
+            opacity: 0;
+        }
+        40% {
+            box-shadow:
+                0 0 40px #0ff,
+                inset 0 0 80px #0ff;
+            opacity: 1;
+        }
+        100% {
+            box-shadow:
+                0 0 0px #0ff,
+                inset 0 0 0px #0ff;
+            opacity: 0;
+        }
+    }
+    /* Mobile tap glow for Projects button */
+    .text--customprojects.tap-glow {
+        transform: translateX(-50%) translateY(-6px);
+        box-shadow:
+            0 0 25px rgba(0, 255, 255, 0.9),
+            0 0 50px rgba(0, 255, 255, 0.6),
+            inset 0 6px 10px rgba(255, 255, 255, 0.95),
+            inset 0 -6px 10px rgba(0, 0, 0, 0.18);
+    }
+
     .text--customprojects {
         position: absolute;
         top: 38%;
@@ -29,6 +79,36 @@
             cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
         animation: text-focus-in 1s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
     }
+    .text--customprojects:hover {
+        transform: translateX(-50%) translateY(-6px);
+
+        box-shadow:
+            0 22px 32px rgba(0, 0, 0, 0.5),
+            inset 0 6px 10px rgba(255, 255, 255, 0.95),
+            inset 0 -6px 10px rgba(0, 0, 0, 0.18);
+    }
+
+    .text--customprojects span {
+        position: relative;
+        display: inline-block;
+        color: white;
+        z-index: 2;
+        overflow: hidden;
+    }
+    .text--customprojects span::before {
+        content: attr(data-text);
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 0%;
+        height: 100%;
+        color: rgb(225, 244, 244);
+        white-space: nowrap;
+        overflow: hidden;
+        transition: width 1s ease;
+        z-index: 3;
+    }
+
     .top-bar {
         position: absolute;
         top: 0;
