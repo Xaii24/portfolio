@@ -41,7 +41,7 @@
     }
     .text--customprojects {
         position: absolute;
-        top: 38%;
+        top: 39%;
         left: 50%;
         transform: translateX(-50%);
         padding: 30px 100px;
@@ -124,7 +124,7 @@
         padding: 0 20px;
         margin-top: 220px;
         margin-right: -35px;
-        margin-left: 28px;
+        margin-left: 27px;
         justify-items: start; /* 👈 Align items to the left */
     }
 }
