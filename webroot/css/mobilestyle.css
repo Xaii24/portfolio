@@ -1,4 +1,12 @@
 @media screen and (max-width: 430px) {
+    html,
+    body {
+        width: 100%;
+        max-width: 100%;
+        overflow-x: hidden;
+        overscroll-behavior-x: none;
+        touch-action: pan-y;
+    }
     body::before {
         content: '';
         position: fixed;
@@ -124,7 +132,7 @@
         padding: 0 20px;
         margin-top: 220px;
         margin-right: -35px;
-        margin-left: 27px;
+        margin-left: 26px;
         justify-items: start; /* 👈 Align items to the left */
     }
 }
