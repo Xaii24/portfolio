@@ -190,10 +190,12 @@ VANTA.FOG({
   // Projects button logic
   if (btn) {
     btn.addEventListener('click', () => {
-
-      document.body.classList.remove('glow-once');
-void document.body.offsetWidth;
-document.body.classList.add('glow-once');
+      
+if (window.matchMedia('(max-width: 430px)').matches) {
+  document.body.classList.remove('glow-once');
+  void document.body.offsetWidth; // force reflow
+  document.body.classList.add('glow-once');
+}
 
 
       // 🚀 Load project images ONLY when Projects is clicked
