@@ -133,4 +133,10 @@ class PortfolioController extends AppController
 
         return $this->redirect(['action' => 'index']);
     }
+
+    public function encryptacase()
+    {
+        // This will automatically render:
+        // templates/Portfolio/encryptacase.php
+    }
 }

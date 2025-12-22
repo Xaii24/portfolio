@@ -1,0 +1,173 @@
+/* ==========================
+   PORTFOLIO SECTIONS (Ordering System)
+   ========================== */
+.ordering-system-section {
+    background: #ffffff;
+    color: #111;
+    padding: 60px 20px;
+        margin-top: -160px; /
+}
+
+
+.ordering-system-section .portfolio-heading {
+    font-size: 2rem;
+    margin-bottom: 40px;
+    text-align: center;
+    font-weight: 600;
+    
+}
+
+.ordering-system-section .portfolio-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    max-width: 1000px;
+    margin: 0 auto;
+    gap: 30px;
+}
+
+.ordering-system-section .portfolio-image img {
+    width: 100%;
+    transform: scale(1.25); /* MAKES IMAGE BIGGER */
+    transform-origin: center left; /* grows toward left */
+    border-radius: 8px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    margin-left: -110px;
+}
+
+.ordering-system-section .portfolio-image img:hover {
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.15);
+}
+
+.ordering-system-section .portfolio-text {
+    flex: 1;
+    min-width: 300px;
+    padding-left: 20px;
+    
+    
+}
+.ordering-system-section .portfolio-text p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.ordering-system-section .portfolio-text ul {
+    list-style: none; /* remove default bullets */
+     margin-top: 10px;
+    padding-left: 20px;
+}
+
+.ordering-system-section .portfolio-text ul li {
+    position: relative;
+    padding-left: 24px; /* space for custom bullet */
+    margin-bottom: 10px;
+    font-size: 1.2rem; /* adjust to match chat section */
+    font-weight: 200;
+}
+
+.ordering-system-section .portfolio-text ul li::before {
+    content: '•'; /* the bullet symbol */
+    position: absolute;
+    left: 0;
+    color: #005bea; /* <-- set your desired color here */
+    font-size: 1.4rem;
+    line-height: 1; /* optional for alignment */
+}
+.ordering-system-section .portfolio-text .portfolio-buttons {
+    margin-top: 25px;
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.ordering-system-section .portfolio-text .portfolio-buttons .cta-btn {
+    background: linear-gradient(90deg, #005bea, #00c6fb);
+    color: #fff;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-weight: 500;
+    font-size: 1rem;
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.3s ease;
+}
+
+.ordering-system-section .portfolio-text .portfolio-buttons .cta-btn:hover {
+    background: linear-gradient(90deg, #3867b3, #00c6fb);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(0, 198, 251, 0.3);
+}
+/* Pulse circle for the "View Live Menu" button */
+.ordering-system-section .cta-btn {
+    position: relative;
+    font-size: 1rem;
+    background: linear-gradient(90deg, #005bea, #00c6fb);
+    color: #fff;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-weight: 500;
+    display: inline-flex;
+    align-items: center;
+    gap: 12px; /* space between circle and text */
+    cursor: pointer;
+    text-decoration: none;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.ordering-system-section .cta-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(0, 198, 251, 0.3);
+}
+
+.ordering-system-section .pulse-circle {
+    width: 10px;
+    height: 10px;
+    background-color: white;
+    border-radius: 50%;
+    position: relative;
+}
+
+.ordering-system-section .pulse-circle::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    opacity: 0.9;
+    animation: pulse 1.5s infinite ease-out;
+}
+.portfolio-text {
+    margin-top: -40px; /* move text UP */
+}
+
+
+@keyframes pulse {
+    0% {
+        transform: translate(-50%, -50%) scale(1);
+        opacity: 0.6;
+    }
+    70% {
+        transform: translate(-50%, -50%) scale(4);
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .ordering-system-section .portfolio-content {
+        flex-direction: column;
+    }
+    .ordering-system-section .portfolio-text {
+        padding-left: 0;
+    }
+}
+
+

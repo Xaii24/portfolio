@@ -1,0 +1,154 @@
+/* ==========================
+   MD GLOBAL TRADING SECTION STYLING
+   ========================== */
+.md-global-section {
+    position: relative;
+    width: 100vw;
+    padding: 60px 0;
+    background: #ffffff;
+    overflow: hidden;
+    bottom: 170px;
+}
+
+.md-global-heading {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 6rem;
+    font-weight: 600;
+    position: relative;
+    right: 0px;
+    bottom: 50px;
+}
+
+.md-global-content {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 80px;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.md-global-image {
+    position: relative;
+}
+
+.md-global-image img {
+    width: 500px !important;
+    position: relative;
+    top: -60px;
+    right: 110px !important;
+    z-index: 2;
+    transform: scale(1.25);
+    transform-origin: center left;
+    border-radius: 8px;
+    box-shadow: 0 10px 20px rgba(3, 78, 183, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+.md-global-image img:hover {
+    box-shadow: 0 15px 25px rgba(14, 45, 186, 0.15);
+}
+
+.md-global-text {
+    position: relative;
+    top: -150px;
+    max-width: 470px; /* limit width so text wraps nicely */
+    font-size: 1.3rem;
+    line-height: 1.5;
+    right: 15px;
+}
+
+.md-global-text p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    font-weight: 400;
+}
+
+.md-global-text ul {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 20px;
+}
+
+.md-global-text ul li {
+    margin-bottom: 6px;
+    font-size: 1.2rem;
+    position: relative;
+    padding-left: 24px;
+    font-weight: 200;
+}
+
+.md-global-text ul li::before {
+    content: '•';
+    position: absolute;
+    left: 0;
+    color: #005bea;
+    font-size: 1.4rem;
+}
+
+.md-global-buttons {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.md-global-buttons .cta-btn {
+    position: relative;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-size: 1rem;
+    background: linear-gradient(90deg, #005bea, #00c6fb);
+    color: #fff;
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    cursor: pointer;
+    margin-top: 0.5rem;
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+    text-decoration: none;
+}
+
+.md-global-buttons .cta-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(0, 198, 251, 0.3);
+}
+
+.md-global-buttons .pulse-circle {
+    width: 10px;
+    height: 10px;
+    background-color: white;
+    border-radius: 50%;
+    position: relative;
+}
+
+.md-global-buttons .pulse-circle::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    opacity: 0.9;
+    animation: pulse 1.5s infinite ease-out;
+}
+
+@keyframes pulse {
+    0% {
+        transform: translate(-50%, -50%) scale(1);
+        opacity: 0.6;
+    }
+    70% {
+        transform: translate(-50%, -50%) scale(4);
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
+}

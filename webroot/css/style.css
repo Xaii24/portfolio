@@ -4,6 +4,7 @@ body {
     padding: 0;
     overflow-y: auto; /* Only scroll when content overflows */
     height: 100%;
+    background-color: #000; /* Black background */
 }
 body::before {
     content: '';
@@ -144,7 +145,7 @@ body.glow-once::before {
         /* strong shadow offset */ 0 0 8px rgba(0, 0, 0, 0.6); /* subtle glow */
 }
 .text--custom3 {
-    font-size: 1.1em;
+    font-size: 1em;
     font-weight: 600;
     color: white !important;
     text-decoration: none !important;
@@ -160,7 +161,7 @@ body.glow-once::before {
     opacity: 0.6;
 }
 .text--custom5 {
-    font-size: 1.1em;
+    font-size: 1em;
     font-weight: 600;
     color: white !important;
     text-decoration: none !important;
@@ -175,63 +176,6 @@ body.glow-once::before {
 }
 .text--custom5:hover {
     opacity: 0.6;
-}
-/* Animation Class */
-.tracking-in-contract-bck-top {
-    -webkit-animation: tracking-in-contract-bck-top 1s
-        cubic-bezier(0.215, 0.61, 0.355, 1) both;
-    animation: tracking-in-contract-bck-top 1s
-        cubic-bezier(0.215, 0.61, 0.355, 1) both;
-}
-
-/* Keyframes */
-@-webkit-keyframes tracking-in-contract-bck-top {
-    0% {
-        letter-spacing: 1em;
-        -webkit-transform: translateZ(400px) translateY(-300px);
-        transform: translateZ(400px) translateY(-300px);
-        opacity: 0;
-    }
-    40% {
-        opacity: 0.6;
-    }
-    100% {
-        -webkit-transform: translateZ(0) translateY(0);
-        transform: translateZ(0) translateY(0);
-        opacity: 1;
-    }
-}
-
-@keyframes tracking-in-contract-bck-top {
-    0% {
-        letter-spacing: 1em;
-        -webkit-transform: translateZ(400px) translateY(-300px);
-        transform: translateZ(400px) translateY(-300px);
-        opacity: 0;
-    }
-    40% {
-        opacity: 0.6;
-    }
-    100% {
-        -webkit-transform: translateZ(0) translateY(0);
-        transform: translateZ(0) translateY(0);
-        opacity: 1;
-    }
-}
-
-.fade-in {
-    animation: fade-in 1.2s ease-in both;
-}
-
-@keyframes fade-in {
-    0% {
-        opacity: 0;
-        transform: translateY(-10px);
-    }
-    100% {
-        opacity: 1;
-        transform: translateY(0);
-    }
 }
 /* Hidden by default */
 .hidden {

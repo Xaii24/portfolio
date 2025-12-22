@@ -1,0 +1,147 @@
+/* ==========================
+   DASHBOARD SECTION STYLING
+   ========================== */
+.dashboard-section {
+    position: relative;
+    width: 100vw;
+    padding: 60px 0;
+    background: #ffffff;
+    overflow: hidden;
+}
+
+.dashboard-heading {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 6rem;
+    font-weight: 600;
+    position: relative;
+    right: 0px;
+    bottom: 50px;
+}
+
+.dashboard-content {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 80px;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.dashboard-image {
+    position: relative;
+}
+
+.dashboard-img-left {
+    width: 600px !important;
+    position: relative;
+    top: -100px;
+    right: 40px !important;
+    z-index: 2;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.dashboard-text {
+    position: relative;
+    top: -150px;
+    max-width: 470px; /* limit width so text wraps nicely */
+
+    font-size: 1.3rem;
+    line-height: 1.5;
+    right: 55px;
+}
+
+.dashboard-text p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    font-weight: 400;
+}
+
+.dashboard-text ul {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 20px;
+}
+
+.dashboard-text ul li {
+    margin-bottom: 6px;
+    font-size: 1.2rem;
+    position: relative;
+    padding-left: 24px;
+    font-weight: 200;
+}
+
+.dashboard-text ul li::before {
+    content: '•';
+    position: absolute;
+    left: 0;
+    color: #005bea;
+    font-size: 1.4rem;
+}
+
+.dashboard-text .cta-btn {
+    position: relative;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-size: 1rem;
+    background: linear-gradient(90deg, #005bea, #00c6fb);
+    color: #fff;
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    cursor: pointer;
+    margin-top: 0.5rem;
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+    text-decoration: none;
+}
+
+.dashboard-text .cta-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(0, 198, 251, 0.3);
+}
+
+.dashboard-buttons {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.dashboard-text .pulse-circle {
+    width: 10px;
+    height: 10px;
+    background-color: white;
+    border-radius: 50%;
+    position: relative;
+}
+
+.dashboard-text .pulse-circle::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    opacity: 0.9;
+    animation: pulse 1.5s infinite ease-out;
+}
+
+@keyframes pulse {
+    0% {
+        transform: translate(-50%, -50%) scale(1);
+        opacity: 0.6;
+    }
+    70% {
+        transform: translate(-50%, -50%) scale(4);
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
+}

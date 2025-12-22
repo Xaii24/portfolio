@@ -1,0 +1,142 @@
+/* ==========================
+   BASE BLOBS
+   ========================== */
+.blob-background {
+    position: absolute;
+    z-index: 1;
+    pointer-events: none;
+    width: 580px;
+    height: 600px;
+    overflow: visible;
+
+    opacity: 0; /* start hidden for fade-in */
+}
+
+/* Make the SVG fill container and slightly transparent */
+.blob-background svg {
+    width: 100%;
+    height: 100%;
+    opacity: 0.7;
+    filter: drop-shadow(0 0 0px #00cfff); /* Glow effect */
+    transform-origin: center;
+}
+
+.blobs-wrapper {
+    position: absolute; /* important! */
+    top: 180px; /* move down */
+    right: 220px;
+}
+
+/* ==========================
+   INDIVIDUAL BLOBS (FADE-IN TOGETHER)
+   ========================== */
+.blob-top-right {
+    top: -200px;
+    right: -200px;
+    animation:
+        floatBlob1 12s ease-in-out infinite alternate,
+        fadeInBlob 1s ease-out forwards;
+    animation-delay: 0s, 3.5s; /* all blobs fade in at same time */
+}
+
+.blob-middle-right,
+.blob-middle-right1,
+.blob-far-right {
+    animation:
+        floatBlob2 15s ease-in-out infinite alternate,
+        fadeInBlob 1s ease-out forwards;
+    animation-delay: 0s, 3.5s; /* synchronized fade-in */
+}
+
+.blob-middle-right {
+    top: -20px;
+    right: -280px;
+}
+
+.blob-middle-right1 {
+    top: -220px;
+    right: 350px;
+    animation-name: floatBlob2, fadeInBlob;
+}
+
+.blob-far-right {
+    top: -50px;
+    right: -100px;
+    animation-name: floatBlob3, fadeInBlob;
+    animation-delay: 0s, 3.5s;
+}
+
+/* ==========================
+   FADE-IN ANIMATION
+   ========================== */
+@keyframes fadeInBlob {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* ==========================
+   FLOATING ANIMATIONS
+   ========================== */
+@keyframes floatBlob1 {
+    0% {
+        transform: translate(0px, 0px) scale(1);
+    }
+    25% {
+        transform: translate(40px, -30px) scale(1.05);
+    }
+    50% {
+        transform: translate(-30px, 20px) scale(0.95);
+    }
+    75% {
+        transform: translate(20px, 40px) scale(1.1);
+    }
+    100% {
+        transform: translate(0px, 0px) scale(1);
+    }
+}
+
+@keyframes floatBlob2 {
+    0% {
+        transform: translate(0px, 0px) scale(1);
+    }
+    25% {
+        transform: translate(-50px, 40px) scale(1.1);
+    }
+    50% {
+        transform: translate(30px, -30px) scale(0.9);
+    }
+    75% {
+        transform: translate(-20px, 20px) scale(1.05);
+    }
+    100% {
+        transform: translate(0px, 0px) scale(1);
+    }
+}
+
+@keyframes floatBlob3 {
+    0% {
+        transform: translate(0px, 0px) scale(1);
+    }
+    25% {
+        transform: translate(30px, 50px) scale(0.95);
+    }
+    50% {
+        transform: translate(-40px, -40px) scale(1.1);
+    }
+    75% {
+        transform: translate(20px, 30px) scale(1.05);
+    }
+    100% {
+        transform: translate(0px, 0px) scale(1);
+    }
+}
+
+/* Optional: make blobs glow more strongly */
+.blob-background svg path {
+    filter: drop-shadow(0 0 10px #00cfff);
+    mix-blend-mode: screen; /* enhances glow on dark backgrounds */
+}

@@ -1,0 +1,131 @@
+/* ==========================
+   HERO SECTION
+   ========================== */
+.hero-section {
+    background-color: #000; /* black background */
+    color: #fff; /* default text color white */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* full viewport height */
+    text-align: left;
+    padding: 0 40px;
+    position: relative;
+    overflow: hidden; /* allow skills bar to show */
+}
+
+/* Hero inner flex: text + image */
+.hero-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    z-index: 2; /* in front of blobs */
+}
+
+/* Hero text */
+.hero-content {
+    max-width: 50%;
+    margin-left: 60px; /* pushes text to the right */
+    margin-bottom: 60px; /* pushes text to the right */
+}
+
+/* Typing effect title */
+.hero-title {
+    font-size: 3rem;
+    color: #fff;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 2px solid #0ff; /* cursor effect */
+    width: 0;
+    margin: 0;
+    animation:
+        typing 2.5s steps(25) forwards,
+        blink 1.5s step-end infinite 2.5s; /* slower blinking after typing */
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+    0%,
+    100% {
+        border-color: #0ff;
+    }
+}
+
+/* Subtitle sliding in */
+.hero-subtitle {
+    color: #fff;
+    font-size: 1.3rem;
+    margin: 10px 0;
+    max-width: 600px;
+    line-height: 1.5;
+    opacity: 0;
+    transform: translateX(40px); /* start off to the right */
+    animation: slideLeft 1s ease-out forwards;
+    animation-delay: 2.6s; /* after title typing finishes */
+}
+
+@keyframes slideLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-40px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+} /* Skills container at bottom of hero */
+/* ==========================
+   HERO SKILLS MARQUEE
+   ========================== */
+
+.hero-skills-container {
+    position: absolute;
+    bottom: 10px; /* ⬅️ MOVE UP / DOWN */
+    left: 0;
+    display: flex; /* ⬅️ THIS is why they’re now side-by-side */
+    flex-direction: row;
+    width: 300%; /* ⬅️ 3 tracks */
+    overflow: hidden;
+    z-index: 3;
+    animation: scrollSkills 22s linear infinite;
+}
+/* Pause scrolling on hover */
+.hero-skills-container:hover {
+    animation-play-state: paused;
+}
+
+/* Individual skill lines */
+.hero-skills-track {
+    white-space: nowrap;
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.45); /* low-key gray */
+}
+.hero-skills-track::after {
+    content: '∘ ∘ ∘';
+    margin: 0 40px; /* ⬅️ control spacing around separator */
+    color: rgba(255, 255, 255, 0.25); /* subtle separator */
+}
+/* Scroll animation */
+@keyframes scrollSkills {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-33.333%);
+    }
+}

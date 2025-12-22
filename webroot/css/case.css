@@ -1,0 +1,776 @@
+/* ===== FORCE WHITE PAGE ===== */
+html,
+body {
+    background: #ffffff !important;
+    color: #111 !important;
+    font-family: 'Inter', 'Helvetica Neue', Arial, sans-serif;
+    margin: 0;
+    line-height: 1.6;
+}
+
+h1,
+h2,
+h3 {
+    color: #1a1a1a;
+    margin-bottom: 0.5em;
+    font-weight: 500;
+}
+p {
+    color: #444;
+    font-size: 1.1rem;
+}
+section {
+    padding: 80px 20px;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.encrypta-hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+.encrypta-hero p {
+    font-size: 1.5rem;
+    max-width: 700px;
+    margin: 0 auto;
+    color: #555;
+}
+/* ARCHITECTURE */
+.encrypta-architecture {
+    background-color: #f9f9f9;
+    margin-top: -100px;
+}
+.arch-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: center;
+}
+.arch-block {
+    flex: 1;
+    min-width: 300px;
+    background: #fff;
+    border: 1px solid #eee;
+    border-radius: 10px;
+    padding: 30px;
+}
+.arch-block img {
+    max-width: 90%;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+/* Targets all <p> elements inside the Architecture section */
+.encrypta-architecture .arch-block p {
+    font-size: 1rem;
+    color: #333; /* darker text for readability */
+    margin-bottom: 10px;
+}
+/* SCREENSHOTS */
+.encrypta-screenshots {
+    background-color: #fff;
+}
+.encrypta-screenshots img {
+    width: 300px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    background-color: #f7f7f7;
+}
+.screenshot-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+/* CTA */
+.encrypta-cta {
+    text-align: center;
+    background-color: #f9f9f9;
+    border-top: 1px solid #eee;
+}
+.cta-btn {
+    display: inline-block;
+    background-color: #0070f3;
+    color: white;
+    text-decoration: none;
+    padding: 14px 28px;
+    border-radius: 8px;
+    font-weight: 500;
+    margin: 10px;
+    transition: background-color 0.2s ease;
+}
+.cta-btn:hover {
+    background-color: #005ac1;
+}
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 40px;
+}
+
+.feature-card {
+    display: flex;
+    gap: 20px;
+    background: #fff;
+    border: 1px solid #e6e6e6;
+    border-radius: 16px;
+    padding: 30px 25px;
+    transition: all 0.25s ease;
+    align-items: flex-start;
+}
+
+.feature-card:hover {
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+    transform: translateY(-3px);
+}
+.icon-wrap {
+    flex-shrink: 0;
+    background: #e6f0ff; /* soft, professional blue */
+    color: #0059d6; /* deep blue for the icon itself */
+    border-radius: 12px;
+    width: 52px;
+    height: 52px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.4rem;
+}
+
+.feature-card {
+    display: flex;
+    gap: 20px;
+    background: #ffffff; /* clean white */
+    border: 1px solid #ddd; /* subtle border */
+    border-radius: 16px;
+    padding: 30px 25px;
+    transition: all 0.25s ease;
+    align-items: flex-start;
+}
+
+.feature-card:hover {
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+    transform: translateY(-3px);
+}
+
+.feature-card h3 {
+    margin: 0 0 10px 0;
+    font-size: 1.5rem;
+    color: #111; /* dark gray for readability */
+}
+
+.feature-card p {
+    margin: 0;
+    color: #555; /* medium gray for body text */
+    line-height: 1.5;
+    font-size: 1.3rem;
+}
+
+.encrypta-architecture .arch-block h6 {
+    font-size: 1.5rem; /* slightly smaller than h2/h3 for hierarchy */
+    font-weight: 600; /* semi-bold */
+    color: #4b4b4b; /* dark gray for readability */
+    margin-bottom: 15px; /* spacing below the title */
+    position: relative; /* for possible decorative line */
+}
+.encrypta-architecture-title {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 40px;
+    font-weight: 600; /* optional: semi-bold */
+    color: #333; /* optional: text color */
+}
+
+/* Optional: gradient underline like other titles */
+.encrypta-architecture-title::after {
+    content: '';
+    display: block;
+    width: 80px;
+    height: 2px;
+    background: linear-gradient(135deg, #3b82f6, #a78bfa);
+    margin: 8px auto 0; /* space above */
+    border-radius: 2px;
+}
+
+.screenshots-title {
+    font-family: 'Inter', sans-serif; /* custom font */
+    font-size: 3rem;
+    margin-bottom: 40px;
+    text-align: center;
+    font-weight: 600;
+    color: #333;
+}
+/* Optional gradient underline */
+.screenshots-title::after {
+    content: '';
+    display: block;
+    width: 80px;
+    height: 2px;
+    background: linear-gradient(135deg, #3b82f6, #a78bfa);
+    margin: 10px auto 0; /* center the line */
+    border-radius: 2px;
+}
+.encrypta-hero {
+    position: relative;
+    text-align: center;
+    padding: 180px 20px 100px;
+    background: linear-gradient(180deg, #ffffff 0%, #fafafa 100%);
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.04);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    overflow: hidden;
+}
+.encrypta-hero::before {
+    content: '';
+    position: absolute;
+    top: -150px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 1800px;
+    height: 400px;
+    background: radial-gradient(
+        circle at center,
+        rgba(124, 58, 237, 0.08),
+        transparent 70%
+    );
+    filter: blur(60px);
+    z-index: 0;
+}
+.encrypta-hero h1 {
+    position: relative;
+    z-index: 1;
+    font-family: 'Poppins', 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 3rem;
+    color: #1a1a1a;
+    line-height: 1.1;
+    margin-bottom: 20px;
+    letter-spacing: -0.02em;
+    margin-top: -110px;
+}
+
+.encrypta-hero p {
+    position: relative;
+    z-index: 1;
+    font-family: 'Inter', sans-serif;
+    color: #4a4a4a;
+    font-size: 1.1rem;
+    max-width: 700px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+.encrypta-hero h1::after {
+    content: '';
+    display: block;
+    width: 120px;
+    height: 2px;
+    background: linear-gradient(135deg, #3b82f6, #a78bfa);
+    margin: 20px auto 0;
+    border-radius: 2px;
+    z-index: 1;
+    position: relative;
+}
+
+.encrypta-cta {
+    text-align: center;
+    padding: 80px 20px;
+    background-color: #ffffff; /* light gray background */
+    border-radius: 20px;
+}
+
+.encrypta-cta .cta-btn {
+    display: inline-block;
+    margin: 10px 15px;
+    padding: 14px 30px;
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 50px;
+    background: linear-gradient(135deg, #3b82f6, #a78bfa);
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.encrypta-cta .cta-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(124, 58, 237, 0.3);
+}
+
+.encrypta-cta p {
+    margin-top: 20px;
+    font-size: 1.3rem;
+    color: #111;
+}
+
+.encrypta-cta p a {
+    color: #0070f3;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.encrypta-cta p a:hover {
+    color: #0051a3;
+}
+
+.livechat-title {
+    font-size: 2rem;
+    font-weight: 500;
+    color: #333;
+    margin-bottom: 15px;
+    padding-left: 18px;
+    position: relative;
+}
+
+.livechat-title::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 4px;
+    height: 70%;
+    background: linear-gradient(135deg, #3b82f6, #a78bfa);
+    border-radius: 2px;
+}
+
+.encrypta-livechat .container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0px; /* reduce from 40px to 20px */
+}
+.livechat-img-wrapper {
+    flex: 0 0 35%; /* take 45% of the container */
+    max-width: 400px;
+}
+
+.livechat-img {
+    width: 80%;
+    border-radius: 15px;
+    display: block;
+    position: relative; /* stays above shadow */
+    z-index: 2;
+}
+
+.livechat-img-shadow {
+    content: '';
+    position: absolute;
+    bottom: -60px; /* distance below image */
+    left: 15%;
+    transform: translateX(-50%);
+    width: 400px; /* adjust shadow width */
+    height: 25px; /* shadow height */
+    background: rgba(0, 0, 0, 0.3); /* shadow opacity */
+    filter: blur(18px); /* blur effect */
+    border-radius: 50%;
+    z-index: 1; /* behind image */
+    pointer-events: none;
+}
+.livechat-img:hover {
+    transform: scale(1.03);
+}
+.encrypta-livechat div[style*='flex:1; min-width:300px;'] {
+    flex: 0 0 50%; /* text takes 50% */
+    margin-top: -250px; /* adjust value as needed */
+}
+.encrypta-livechat {
+    background-color: #ffffff; /* unique section background */
+    padding: 60px 20px;
+}
+/* ===========================
+   PERFORMANCE & SCALABILITY
+=========================== */
+.performance-diagram {
+    width: 50%; /* shrink size */
+    max-width: 100%; /* stay responsive */
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin-top: 30px;
+}
+.encrypta-performance {
+    padding: 60px 20px;
+    background-color: #fafafa;
+    color: #ffffff;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.encrypta-performance h2 {
+    font-size: 1rem important;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.encrypta-performance .section-divider {
+    width: 80px;
+    background: linear-gradient(135deg, #3b82f6, #a78bfa);
+    margin: 0 auto 30px;
+    border-radius: 2px;
+}
+
+.encrypta-performance p {
+    font-size: 1rem;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+.encrypta-performance img {
+    margin-top: 30px;
+    max-width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Features Section H5 Titles */
+.encrypta-features .feature-card h5 {
+    font-size: 2rem; /* adjust size as needed */
+    font-weight: 700; /* bold */
+    margin-bottom: 0.8rem;
+    transition: color 0.3s ease;
+}
+.encrypta-deletion {
+    color: #1a1a1a;
+}
+
+.encrypta-deletion .container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 40px;
+}
+
+.deletion-text {
+    flex: 1;
+    min-width: 320px;
+}
+
+.deletion-title {
+    font-size: 2rem;
+    font-weight: 500;
+    margin-bottom: 20px;
+    padding-left: 18px;
+    position: relative;
+    color: #1a1a1a;
+}
+
+.deletion-title::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 4px;
+    height: 70%;
+    background: linear-gradient(135deg, #3b82f6, #a78bfa);
+    border-radius: 2px;
+}
+
+.deletion-img-wrapper {
+    flex: 0 0 45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px; /* space between images */
+}
+
+.deletion-img {
+    transition: transform 0.3s ease;
+    width: 65%; /* fill wrapper */
+    border-radius: 15px;
+    display: block;
+    margin-left: 80px; /* shift right */
+}
+/* Shadow */
+.deletion-img-shadow {
+    content: '';
+    position: absolute;
+    bottom: -60px; /* adjust distance from image */
+    left: 76%;
+    transform: translateX(-50%);
+    width: 400px; /* adjust shadow width */
+    height: 25px; /* adjust shadow height */
+    background: rgba(0, 0, 0, 0.3); /* softer shadow */
+    filter: blur(18px);
+    border-radius: 50%;
+    z-index: 1; /* behind image */
+    pointer-events: none;
+}
+.deletion-img:hover {
+    transform: scale(1.03);
+}
+/* ========== ENCRYPTA CALLS SECTION ========== */
+.encrypta-calls .container {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1px;
+    margin-top: 50px;
+}
+.encrypta-calls {
+    background-color: #ffffff; /* white background */
+    padding: 60px 20px;
+    color: #1a1a1a; /* dark text for contrast */
+}
+.calls-img-wrapper {
+    flex: 1;
+    min-width: 300px;
+    position: relative;
+}
+
+.calls-img-wrapper img {
+    width: 60%;
+    border-radius: 12px;
+}
+.calls-img-wrapper .calls-img-shadow {
+    content: '';
+    position: absolute;
+    bottom: -40px; /* distance from image */
+    left: 50%; /* center horizontally under image */
+    transform: translateX(-75%);
+    width: 350px; /* shadow width */
+    height: 20px; /* shadow height */
+    background: rgba(0, 0, 0, 0.3); /* soft shadow */
+    filter: blur(15px); /* blur for realism */
+    border-radius: 50%; /* rounded shadow */
+    z-index: 1; /* behind image */
+    pointer-events: none; /* avoid blocking clicks */
+}
+
+.calls-text {
+    flex: 1;
+    min-width: 300px;
+    position: relative;
+}
+.calls-text h2 {
+    font-size: 2rem;
+    font-weight: 500;
+    margin-bottom: 10px;
+    padding-left: 18px;
+    position: relative;
+    color: #1a1a1a;
+    white-space: nowrap;
+}
+
+.calls-text h2::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 4px;
+    height: 70%;
+    background: linear-gradient(135deg, #3b82f6, #a78bfa);
+    border-radius: 2px;
+}
+
+.calls-text p {
+    font-size: 1rem;
+    line-height: 1.8;
+    margin-bottom: 10px;
+}
+
+.call-features-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: flex-start;
+}
+.call-feature-card {
+    flex: 1 1 200px;
+    max-width: 250px;
+    text-align: left;
+    margin-bottom: 6px; /* slightly more space under the icon */
+}
+.call-feature-card i {
+    font-size: 1rem;
+    color: #7c3aed;
+    display: inline-block; /* make it block-level-ish */
+    padding-bottom: 12px; /* <- this creates breathing room under the icon */
+    vertical-align: bottom; /* ensures it sits nicely above text */
+}
+.call-feature-card h5 {
+    margin: -3px; /* remove default margins */
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.2; /* tighter line spacing */
+}
+.call-feature-card p {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+.calls-text .learn-more-btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: linear-gradient(135deg, #3b82f6, #a78bfa);
+    color: white;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+.calls-text .learn-more-btn:hover {
+    background: #a855f7;
+    transform: translateY(-2px);
+}
+/* screenshots section*/
+/* screenshots section*/
+/* screenshots section*/
+/* Feature title */
+.encrypta-features .feature-card h5 {
+    font-size: 1rem; /* ⬅️ smaller heading */
+    font-weight: 500;
+    margin: 0 0 6px 0;
+    line-height: 1.25;
+    color: #111;
+}
+/* FORCE Key Features section to white */
+.encrypta-features {
+    background-color: #ffffff !important;
+    color: #111;
+}
+
+/* Feature description */
+.encrypta-features .feature-card p {
+    font-size: 0.95rem; /* ⬅️ smaller body text */
+    line-height: 1.45;
+    margin: 0;
+    color: #555;
+}
+.encrypta-screenshots .template-description {
+    margin: 15px 0 30px;
+    font-size: 18px;
+    color: #000000;
+    text-align: center;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.screenshot-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+.template-cta {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* spacing between buttons */
+    flex-wrap: wrap; /* makes buttons stack on smaller screens */
+    margin-top: 50px;
+}
+.cta-btn {
+    background: linear-gradient(
+        135deg,
+        #3b82f6,
+        #a78bfa
+    ); /* blue-purple gradient */
+    color: white;
+    padding: 12px 28px;
+    font-weight: 600;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+    transition:
+        transform 0.2s,
+        box-shadow 0.2s;
+}
+
+.cta-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+}
+/* Pulsing circle for CTA buttons */
+.cta-btn .pulse-circle {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: white;
+    border-radius: 50%;
+    margin-right: 8px; /* space between circle and text/icon */
+    position: relative;
+}
+
+.cta-btn .pulse-circle::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    opacity: 0.9;
+    animation: pulse-expand 1.5s infinite ease-out;
+}
+
+@keyframes pulse-expand {
+    0% {
+        transform: translate(-50%, -50%) scale(1);
+        opacity: 0.6;
+    }
+    70% {
+        transform: translate(-50%, -50%) scale(4);
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+/* Optional smaller subtle pulse if you prefer inline animation */
+@keyframes pulse-inline {
+    0%,
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    50% {
+        transform: scale(1.4);
+        opacity: 0.6;
+    }
+}
+.cta-btn svg {
+    width: 30px; /* change icon size */
+    height: 30px;
+    margin-right: 8px;
+    vertical-align: middle;
+    fill: white;
+}
+.encrypta-cta {
+    position: relative; /* required for pseudo-element positioning */
+    overflow: hidden; /* ensures blur/glow doesn't spill outside */
+    z-index: 1; /* keep content above pseudo-element */
+    background-color: #ffffff !important;
+}
+
+/* Disable dark glow overlay */
+.encrypta-cta::before {
+    display: none;
+}
+footer {
+    text-align: center;
+    padding: 40px 20px;
+    font-size: 0.9rem;
+    color: #777;
+    background-color: white;
+}
+.encrypta-cta {
+    background: #ffffff !important;
+    padding: 50px 0;
+}
+
+.encrypta-cta .cta-btn {
+    background: linear-gradient(135deg, #3b82f6, #a78bfa);
+    font-size: 14px;
+    padding: 8px 18px;
+    border-radius: 6px;
+}

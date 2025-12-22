@@ -29,12 +29,40 @@
 
     <!-- Load style.css from webroot/css/style.css -->
     <?= $this->Html->css('style') ?>
-        <?= $this->Html->css('mobilestyle') ?>
+    <?= $this->Html->css('hero') ?>
+    <?= $this->Html->css('blob') ?>
+     <?= $this->Html->css('chat') ?>
+     <?= $this->Html->css('case') ?>
+     <?= $this->Html->css('topbar') ?>
+     <?= $this->Html->css('mobilestyle') ?>
+     <?= $this->Html->css('heromockup') ?>
+     <?= $this->Html->css('menu') ?>
+     <?= $this->Html->css('dashboard') ?>
+     <?= $this->Html->css('mdglobal') ?>
+          <?= $this->Html->css('dragon') ?>
+
+
+
+
+
+
+          <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+
+
+
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
+
 
 
     <!-- Allow views to add their own CSS files -->
     <?= $this->fetch('css') ?>
-
     <!-- Allow views to add their own scripts in head -->
     <?= $this->fetch('script') ?>
 </head>

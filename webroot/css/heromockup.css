@@ -1,0 +1,79 @@
+/* ==========================
+   HERO MOCKUP IMAGES
+   ========================== */
+.hero-bg-image img,
+.hero-bg-image1 img,
+.hero-bg-image2 img {
+    width: 240px;
+    height: auto;
+    border-radius: 15px;
+}
+
+/* Base styles for all hero images */
+.hero-bg-image,
+.hero-bg-image1,
+.hero-bg-image2 {
+    position: absolute;
+    bottom: 110px; /* aligns them along the bottom */
+    width: 300px;
+    height: auto;
+    z-index: 2; /* above blobs, below h1 */
+    overflow: hidden;
+    opacity: 0; /* start hidden */
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease,
+        opacity 0.8s ease; /* fade-in opacity only */
+}
+
+/* Individual positions & rotation (fan effect) */
+.hero-bg-image {
+    left: 870px;
+    transform: rotate(-15deg); /* tilt left */
+    animation: fadeIn 0.8s ease-out forwards;
+    animation-delay: 3s; /* after hero title */
+}
+
+.hero-bg-image1 {
+    left: 950px;
+    transform: rotate(0deg); /* center */
+    animation: fadeIn 0.8s ease-out forwards;
+    animation-delay: 3.15s;
+}
+
+.hero-bg-image2 {
+    left: 1050px;
+    transform: rotate(15deg); /* tilt right */
+    animation: fadeIn 0.8s ease-out forwards;
+    animation-delay: 3.3s;
+}
+
+/* ==========================
+   FADE-IN ANIMATION ONLY
+   ========================== */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* ==========================
+   HOVER EFFECT (STRAIGHTEN + POP)
+   ========================== */
+.hero-bg-image:hover {
+    transform: rotate(0deg) scale(1.15); /* straighten + bigger */
+    z-index: 3;
+}
+
+.hero-bg-image1:hover {
+    transform: rotate(0deg) scale(1.15);
+    z-index: 3;
+}
+
+.hero-bg-image2:hover {
+    transform: rotate(0deg) scale(1.15);
+    z-index: 3;
+}
