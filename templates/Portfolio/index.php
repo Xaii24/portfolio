@@ -121,7 +121,8 @@ iOS & web developer building secure, production-ready applications — from conc
 
     <div class="chat-apps-text">
 <p>
-  <strong>Encrypta Chat</strong> is a production-ready iOS messaging app available on the App Store, designed around privacy-first communication, real-time messaging, and secure media handling. The app combines native iOS security primitives with a cloud-backed architecture to deliver encrypted one-to-one and group conversations at scale.
+  <strong>Encrypta Chat</strong> is a production-ready iOS messaging app available on the App Store, designed around privacy-first communication, real-time messaging, and secure media handling. The app combines native iOS security primitives with a cloud-backed architecture to deliver encrypted one-to-one and group conversations at scale, with encrypted audio calling currently being integrated.
+
 </p>
 
 <ul>
@@ -131,7 +132,6 @@ iOS & web developer building secure, production-ready applications — from conc
   <li>Encrypted media on Amazon S3 with secure access</li>
   <li>Real-time push notifications & badges</li>
   <li>Live presence & in-chat activity indicators</li>
-  <li>Encrypted audio calls via Agora</li>
 </ul>
 
 

@@ -113,6 +113,8 @@
     cursor: pointer;
     text-decoration: none;
     transition: transform 0.2s ease, box-shadow 0.2s ease;
+    left: 20px;
+    bottom: 20px;
 }
 
 .ordering-system-section .cta-btn:hover {
