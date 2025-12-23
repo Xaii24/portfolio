@@ -79,7 +79,7 @@ iOS & web developer building secure, production-ready applications — from conc
     <!-- Background Image -->
 <div class="hero-mockup-cards">
     <div class="hero-bg-image">
-        <img src="/img/Img1.png" alt="App Mockup 1" />
+        <img src="/img/watcht.png" alt="App Mockup 1" />
     </div>
     <div class="hero-bg-image1">
         <img src="/img/Image-portrait.png" alt="App Mockup 2" />
