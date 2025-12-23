@@ -318,6 +318,9 @@ MD Global Trading is a full-stack, custom medical supplies website built with Ca
   </div>
 </section>
 
+<section class="work-in-progress-section">
+  ⚒️🚧 This portfolio site is under construction — more updates coming soon! 🚧⚒️
+</section>
 
 
 <!-- 🔊 Sound element -->

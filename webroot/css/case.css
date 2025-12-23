@@ -785,3 +785,20 @@ footer {
     vertical-align: middle;
     white-space: nowrap;
 }
+.work-in-progress-section {
+    text-align: center;
+    font-size: 2rem; /* make text bigger */
+    font-weight: bold; /* bold text */
+    color: #ff6600; /* bright construction color */
+    background-color: #fff8e6; /* light background for contrast */
+    padding: 25px 40px; /* padding around the text */
+    border-radius: 12px;
+    display: inline-block;
+    margin: 40px auto; /* center horizontally with spacing */
+    line-height: 1.5; /* align emoji nicely with text */
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2); /* subtle shadow */
+    position: relative; /* now you can adjust vertical placement */
+    z-index: 999; /* make sure it’s above other content */
+    bottom: 400px;
+    left: 65px;
+}
