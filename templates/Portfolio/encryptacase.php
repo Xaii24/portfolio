@@ -235,25 +235,37 @@ This provides a fast, engaging experience that mirrors modern messaging apps, wi
         </div>
       </div>
 
-      <div class="feature-card">
+ <div class="feature-card">
   <div class="icon-wrap">
     <i class="fas fa-video"></i>
   </div>
   <div>
-    <h5>HD Audio & Video Calls</h5>
-    <p>Provide crystal-clear audio and video calls using third-party SDKs like <strong>Agora</strong> or similar services for fast, reliable, real-time connections.</p>
+    <h5>
+      HD Audio & Video Calls
+      <span class="feature-status">In Progress</span>
+    </h5>
+    <p>
+      Secure, low-latency audio and video calling currently being integrated using
+      <strong>Agora SDK</strong>, focusing on real-time performance, call stability,
+      and seamless in-app communication.
+    </p>
   </div>
 </div>
 
+
       <div class="feature-card">
-        <div class="icon-wrap">
-          <i class="fas fa-eye"></i>
-        </div>
-        <div>
-          <h5>Read Receipts & Status</h5>
-          <p>Know when your message is delivered, seen, or when users are typing — seamlessly synced across devices.</p>
-        </div>
-      </div>
+  <div class="icon-wrap">
+    <i class="fas fa-circle"></i>
+  </div>
+  <div>
+    <h5>Live Chat Indicators</h5>
+    <p>
+      Real-time presence indicators show when users are online and actively engaged
+      in a conversation. 
+    </p>
+  </div>
+</div>
+
 
       <div class="feature-card">
         <div class="icon-wrap">
