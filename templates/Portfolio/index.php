@@ -323,9 +323,7 @@ iOS & web developer building secure, production-ready applications — from conc
 </section>
 
 
-<footer class="work-in-progress">
-  ⚒️🚧 This portfolio site is under construction — more updates coming soon! 🚧⚒️
-</footer>
+
 
 
 <!-- 🔊 Sound element -->
