@@ -76,19 +76,19 @@
 iOS & web developer building secure, production-ready applications — from concept and development to deployment and launch. Explore my work below.
     </div>
 
-    <!-- Background Image -->
+ <!-- Background Image -->
 <div class="hero-mockup-cards">
     <div class="hero-bg-image">
-        <img src="/img/watcht.png" alt="App Mockup 1" />
+        <img src="/img/watcht.png" alt="App Mockup 1" loading="lazy" />
     </div>
     <div class="hero-bg-image1">
-        <img src="/img/Image-portrait.png" alt="App Mockup 2" />
+        <img src="/img/Image-portrait.png" alt="App Mockup 2" loading="lazy" />
     </div>
     <div class="hero-bg-image2">
-        <img src="/img/lp1.png" alt="App Mockup 3" />
+        <img src="/img/lp1.png" alt="App Mockup 3" loading="lazy" />
     </div>
 </div>
-  </div>
+
 
   <div class="hero-skills-container">
   <div class="hero-skills-track">
@@ -254,7 +254,7 @@ iOS & web developer building secure, production-ready applications — from conc
     <!-- TEXT RIGHT -->
     <div class="md-global-text">
       <p>
-MD Global Trading is a full-stack, custom medical supplies website built with CakePHP, PHP, MySQL, JavaScript, HTML, and CSS. It improves product access, organizes brochure sections, and delivers an interactive, engaging experience.      </p>
+ <strong>MD Global Trading</strong> is a full-stack, custom medical supplies website built with CakePHP, PHP, MySQL, JavaScript, HTML, and CSS. It improves product access, organizes brochure sections, and delivers an interactive, engaging experience.      </p>
 
   <ul>
   <li>Animated, cartoon-style product cards, banners, buttons.</li>
@@ -295,7 +295,7 @@ MD Global Trading is a full-stack, custom medical supplies website built with Ca
     <!-- TEXT RIGHT -->
     <div class="dragon-text">
       <p>
-        <strong>Dragon Moving Co.</strong>Dragon Moving Co. is a fully responsive moving company website built with CakePHP, HTML, and CSS, featuring online quote and booking functionality, optimized for mobile.
+        <strong>Dragon Moving Co.</strong> is a fully responsive moving company website built with CakePHP, HTML, and CSS, featuring online quote and booking functionality, optimized for mobile.
       </p>
 
      <ul>

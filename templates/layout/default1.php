@@ -63,6 +63,7 @@
             padding: 20px;
         }
     </style>
+    
 </head>
 
 <body data-barba="wrapper">
