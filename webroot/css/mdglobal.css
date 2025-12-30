@@ -2,12 +2,15 @@
    MD GLOBAL TRADING SECTION STYLING
    ========================== */
 .md-global-section {
+    max-width: 1200px; /* limit width */
+    margin: 40px auto; /* center horizontally */
+    padding: 60px 40px; /* space inside card */
+    background: #ffffff; /* card color */
+    border-radius: 20px; /* rounded corners */
+    box-shadow: 0 25px 40px rgba(0, 0, 0, 0.15); /* card shadow */
     position: relative;
-    width: 100vw;
-    padding: 60px 0;
-    background: #ffffff;
     overflow: hidden;
-    bottom: 170px;
+    height: 570px;
 }
 
 .md-global-heading {

@@ -2,12 +2,20 @@
    CHAT SECTION STYLING
    ========================== */
 .chat-section {
-    position: relative;
-    width: 100vw;
-    padding: 60px 0;
-    background: #ffffff;
+    max-width: 1200px; /* card width */
+    margin: 40px auto; /* center horizontally */
+    padding: 40px 30px; /* inner spacing */
+    background: #ffffff; /* card color */
+    border-radius: 20px; /* rounded corners */
+    box-shadow: 0 25px 40px rgba(15, 18, 197, 0.15);
     overflow: hidden;
+    display: flex; /* flex container for content */
+    flex-direction: column; /* stack heading and content */
+    align-items: center;
+    position: relative;
+    height: 560px;
 }
+
 .chat-heading {
     text-align: center;
     font-size: 2.5rem; /* smaller */
@@ -15,7 +23,7 @@
     font-weight: 600;
     position: relative;
     right: -60px;
-    bottom: 50px;
+    bottom: 60px;
 }
 
 .chat-apps-content {
@@ -54,7 +62,7 @@
 }
 .chat-apps-text {
     position: relative;
-    top: -150px;
+    top: -170px;
     max-width: 550px;
     font-size: 1.3rem;
     line-height: 1.5;

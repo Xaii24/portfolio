@@ -2,12 +2,15 @@
    DRAGON MOVING SECTION STYLING
    ========================== */
 .dragon-section {
+    max-width: 1200px; /* limit width */
+    margin: 40px auto; /* center horizontally */
+    padding: 60px 40px; /* space inside card */
+    background: #ffffff; /* card color */
+    border-radius: 20px; /* rounded corners */
+    box-shadow: 0 25px 40px rgba(15, 18, 197, 0.15);
     position: relative;
-    width: 100vw;
-    padding: 60px 0;
-    background: #ffffff;
     overflow: hidden;
-    bottom: 330px;
+    height: 570px;
 }
 
 .dragon-heading {

@@ -4,7 +4,6 @@ body {
     padding: 0;
     overflow-y: auto; /* Only scroll when content overflows */
     height: 100%;
-    background-color: #000; /* Black background */
 }
 body::before {
     content: '';

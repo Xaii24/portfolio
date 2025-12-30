@@ -2,19 +2,23 @@
    PORTFOLIO SECTIONS (Ordering System)
    ========================== */
 .ordering-system-section {
-    background: #ffffff;
-    color: #111;
-    padding: 60px 20px;
-        margin-top: -160px; /
+    max-width: 1200px; /* limit width */
+    margin: 40px auto; /* center horizontally */
+    padding: 10px 10px; /* space inside card */
+    background: #ffffff; /* card color */
+    border-radius: 20px; /* rounded corners */
+    box-shadow: 0 25px 40px rgba(3, 3, 5, 0.15); /* card shadow */
+    position: relative;
+    overflow: hidden; /* prevent overflow outside card */
+    height: 540px;
 }
-
 
 .ordering-system-section .portfolio-heading {
     font-size: 2rem;
     margin-bottom: 40px;
     text-align: center;
     font-weight: 600;
-    
+    margin-top: -40px;
 }
 
 .ordering-system-section .portfolio-content {
@@ -43,8 +47,6 @@
     flex: 1;
     min-width: 300px;
     padding-left: 20px;
-    
-    
 }
 .ordering-system-section .portfolio-text p {
     font-size: 1.2rem;
@@ -54,7 +56,7 @@
 
 .ordering-system-section .portfolio-text ul {
     list-style: none; /* remove default bullets */
-     margin-top: 10px;
+    margin-top: 10px;
     padding-left: 20px;
 }
 
@@ -112,7 +114,9 @@
     gap: 12px; /* space between circle and text */
     cursor: pointer;
     text-decoration: none;
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
     left: 20px;
     bottom: 20px;
 }
@@ -147,7 +151,6 @@
     margin-top: -40px; /* move text UP */
 }
 
-
 @keyframes pulse {
     0% {
         transform: translate(-50%, -50%) scale(1);
@@ -171,5 +174,3 @@
         padding-left: 0;
     }
 }
-
-

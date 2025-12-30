@@ -799,6 +799,6 @@ footer {
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2); /* subtle shadow */
     position: relative; /* now you can adjust vertical placement */
     z-index: 999; /* make sure it’s above other content */
-    bottom: 400px;
+    bottom: 0px;
     left: 65px;
 }
