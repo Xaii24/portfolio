@@ -77,11 +77,6 @@
     transform: translateX(40px); /* start off to the right */
     animation: slideLeft 0s ease-out forwards;
     margin-left: -110px;
-    font-family:
-        'Inter',
-        -apple-system,
-        BlinkMacSystemFont,
-        sans-serif;
 }
 
 @keyframes slideLeft {
