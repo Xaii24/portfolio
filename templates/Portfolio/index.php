@@ -74,6 +74,8 @@ Need a secure, production-ready mobile or web application? One that can be fully
   </div>
 </div>
 
+  <p class="scroll-caption">Explore Featured Projects</p>
+
 <div class="scroll-down-indicator">
   <div class="arrow">
     <div class="slice slice1"></div>
@@ -82,6 +84,13 @@ Need a secure, production-ready mobile or web application? One that can be fully
   </div>
 </div>
 
+<div class="scroll-down-indicator scroll-down-indicator-right">
+  <div class="arrow arrow-right">
+    <div class="slice slice1"></div>
+    <div class="slice slice2"></div>
+    <div class="slice slice3"></div>
+  </div>
+</div>
 
  <!-- Background Image -->
 <div class="hero-mockup-cards">
