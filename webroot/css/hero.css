@@ -33,17 +33,18 @@
 }
 
 /* Typing effect title */
+/* Hero title - static text, no blinking */
 .hero-title {
-    font-size: 3rem;
+    font-size: 2.7rem;
     color: #fff;
-    white-space: nowrap;
-    overflow: hidden;
-    border-right: 2px solid #0ff; /* cursor effect */
-    width: 0;
+    white-space: normal; /* allow wrapping if needed */
+    overflow: visible; /* show all text immediately */
+    border-right: none; /* remove cursor */
+    width: auto; /* full width by default */
     margin: 0;
-    animation:
-        typing 2.5s steps(25) forwards,
-        blink 1.5s step-end infinite 2.5s; /* slower blinking after typing */
+    animation: none; /* remove typing animation */
+    margin-left: -110px;
+    font-family: 'Montserrat', sans-serif;
 }
 
 @keyframes typing {
@@ -70,12 +71,17 @@
     color: #fff;
     font-size: 1.3rem;
     margin: 10px 0;
-    max-width: 600px;
+    max-width: 700px;
     line-height: 1.5;
     opacity: 0;
     transform: translateX(40px); /* start off to the right */
-    animation: slideLeft 1s ease-out forwards;
-    animation-delay: 2.6s; /* after title typing finishes */
+    animation: slideLeft 0s ease-out forwards;
+    margin-left: -110px;
+    font-family:
+        'Inter',
+        -apple-system,
+        BlinkMacSystemFont,
+        sans-serif;
 }
 
 @keyframes slideLeft {
@@ -127,5 +133,56 @@
     }
     to {
         transform: translateX(-33.333%);
+    }
+}
+/* Scroll Down Container */
+.scroll-down-indicator {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px; /* space between arrows */
+    margin-top: 20px;
+    margin-right: 1100px;
+}
+
+.arrow {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1px; /* space between slices */
+}
+
+/* Each slice is a mini triangle */
+.slice {
+    width: 0;
+    height: 0;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-top: 6px solid white; /* default color */
+    filter: drop-shadow(0 0 0 rgba(5, 159, 236, 0));
+    animation: lightSlice 1.5s infinite;
+}
+
+/* Stagger slices so top lights first, bottom last */
+.slice1 {
+    animation-delay: 0s;
+}
+.slice2 {
+    animation-delay: 0.15s;
+}
+.slice3 {
+    animation-delay: 0.3s;
+}
+
+/* Keyframes for glowing effect */
+@keyframes lightSlice {
+    0%,
+    100% {
+        border-top-color: white;
+        filter: drop-shadow(0 0 0 rgba(5, 159, 236, 0));
+    }
+    50% {
+        border-top-color: #059fec;
+        filter: drop-shadow(0 0 8px #059fec);
     }
 }

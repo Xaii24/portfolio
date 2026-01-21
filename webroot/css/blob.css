@@ -36,7 +36,7 @@
     animation:
         floatBlob1 12s ease-in-out infinite alternate,
         fadeInBlob 1s ease-out forwards;
-    animation-delay: 0s, 3.5s; /* all blobs fade in at same time */
+    /* animation-delay: 0s, 3.5s; all blobs fade in at same time */
 }
 
 .blob-middle-right,
@@ -45,7 +45,7 @@
     animation:
         floatBlob2 15s ease-in-out infinite alternate,
         fadeInBlob 1s ease-out forwards;
-    animation-delay: 0s, 3.5s; /* synchronized fade-in */
+    /* animation-delay: 0s, 3.5s; synchronized fade-in */
 }
 
 .blob-middle-right {
@@ -63,7 +63,7 @@
     top: -50px;
     right: -100px;
     animation-name: floatBlob3, fadeInBlob;
-    animation-delay: 0s, 3.5s;
+    /* animation-delay: 0s, 3.5s; */
 }
 
 /* ==========================

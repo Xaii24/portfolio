@@ -30,22 +30,22 @@
 .hero-bg-image {
     left: 870px;
     transform: rotate(-15deg); /* tilt left */
-    animation: fadeIn 0.8s ease-out forwards;
-    animation-delay: 3s; /* after hero title */
+    animation: fadeIn 0s ease-out forwards;
+    /* animation-delay: 3s; after hero title */
 }
 
 .hero-bg-image1 {
     left: 950px;
     transform: rotate(0deg); /* center */
-    animation: fadeIn 0.8s ease-out forwards;
-    animation-delay: 3.15s;
+    animation: fadeIn 0s ease-out forwards;
+    /* animation-delay: 3.15s; */
 }
 
 .hero-bg-image2 {
     left: 1050px;
     transform: rotate(15deg); /* tilt right */
-    animation: fadeIn 0.8s ease-out forwards;
-    animation-delay: 3.3s;
+    animation: fadeIn 0s ease-out forwards;
+    /* animation-delay: 3.3s; */
 }
 
 /* ==========================

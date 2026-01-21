@@ -24,7 +24,7 @@
     align-items: center;
     gap: 8px;
     white-space: nowrap;
-    margin-left: 40px;
+    margin-left: 42px;
     padding-right: 40px;
     flex-shrink: 0;
     z-index: 2;
@@ -32,14 +32,90 @@
     font-size: 1.1em;
     font-weight: 600;
     color: white !important;
+    margin-top: 5px;
 }
 
 .top-left-bar .dot {
-    color: #0ff;
+    color: #059fec;
     font-weight: bold;
 }
 
 .top-left-bar .top-item {
     color: #fff;
     text-decoration: none;
+}
+/* Make contact button float right */
+.contact-btn {
+    margin-left: auto; /* push to far right */
+    background-color: #059fec; /* light blue */
+    color: #fff; /* white text */
+    padding: 6px 20px;
+    border-radius: 26px;
+    text-decoration: none;
+    font-weight: 500;
+    box-shadow: 0 4px 5px rgba(0, 153, 255, 0.25);
+    transition: all 0.2s ease;
+    display: flex;
+    margin-right: 140px;
+}
+
+/* Hover effect */
+.contact-btn:hover {
+    background-color: #0091e6;
+    box-shadow: 0 6px 10px rgba(0, 153, 255, 0.35);
+}
+
+/* Optional: adjust inner span if needed */
+.contact-btn-text {
+    display: inline-block;
+}
+/* ==========================
+   AVAILABILITY STATUS
+   ========================== */
+.availability {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-left: auto; /* pushes availability + contact to right */
+    margin-left: 520px;
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: #fff;
+    opacity: 0.9;
+}
+
+/* Blue status dot */
+.availability-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #059fec;
+    box-shadow: 0 0 6px rgba(0, 153, 255, 0.6);
+    animation: pulseGlow 2.2s ease-in-out infinite;
+    filter: saturate(1.4);
+}
+
+/* Enhanced glow pulse */
+@keyframes pulseGlow {
+    0% {
+        box-shadow:
+            0 0 4px rgba(0, 153, 255, 0.4),
+            0 0 8px rgba(0, 153, 255, 0.3);
+        opacity: 0.8;
+    }
+
+    50% {
+        box-shadow:
+            0 0 8px rgba(0, 153, 255, 0.9),
+            0 0 16px rgba(0, 153, 255, 0.7),
+            0 0 28px rgba(0, 153, 255, 0.45);
+        opacity: 1;
+    }
+
+    100% {
+        box-shadow:
+            0 0 4px rgba(0, 153, 255, 0.4),
+            0 0 8px rgba(0, 153, 255, 0.3);
+        opacity: 0.8;
+    }
 }

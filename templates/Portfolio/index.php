@@ -1,24 +1,20 @@
 <div class="top-bar">
   <div class="top-left-bar">
-    <span class="top-item">iOS & Full-Stack Developer</span>
+    <span class="top-item">Xaivery Rusconi</span>
     <span class="dot">•</span>
-  <a
-  href="/resume/Xaivery_Rusconi_Resume.pdf"
-  target="_blank"
-  rel="noopener noreferrer"
-  id="resume-button"
-  class="text--custom5 tracking-in-contract-bck-top hover-underline-animation"
->
-  Resume
-</a>
-    <span class="dot">•</span>
+    <span class="top-item">Full-Stack Mobile & Web Developer</span>
+  </div>
+
+  <div class="availability">
+    <span class="availability-dot"></span>
+    <span class="availability-text">Available for work</span>
+  </div>
+
   <?= $this->Html->link(
-      '<span class="text--custom3 tracking-in-contract-bck-top hover-underline-animation">Contact</span>',
+      '<span class="contact-btn-text">Contact Me</span>',
       'mailto:xaiveryr@outlook.com',
-      ['escape' => false, 'id' => 'contact-link']
-  ) ?>  </div>
-
-
+      ['escape' => false, 'id' => 'contact-link', 'class' => 'contact-btn']
+  ) ?>
 </div>
 
 <section class="hero-section">
@@ -69,12 +65,23 @@
 </div>
 
   <!-- HERO INNER FLEX: text + image -->
-  <div class="hero-inner">
-    <div class="hero-content">
-      <h1 class="hero-title">Hi, I'm Xaivery Rusconi</h1>
-      <p class="hero-subtitle">
-iOS & web developer building secure, production-ready applications — from concept and development to deployment and launch. Explore my work below.
-    </div>
+<div class="hero-inner">
+  <div class="hero-content">
+    <h1 class="hero-title">Custom Apps, Ready to Launch</h1>
+  <p class="hero-subtitle">
+Need a secure, production-ready mobile or web application? One that can be fully customized to your business needs. Start from a proven template or build completely from scratch, fast, scalable, and ready to grow. From concept to deployment, Lets get started.
+</p>
+  </div>
+</div>
+
+<div class="scroll-down-indicator">
+  <div class="arrow">
+    <div class="slice slice1"></div>
+    <div class="slice slice2"></div>
+    <div class="slice slice3"></div>
+  </div>
+</div>
+
 
  <!-- Background Image -->
 <div class="hero-mockup-cards">
@@ -92,13 +99,13 @@ iOS & web developer building secure, production-ready applications — from conc
 
   <div class="hero-skills-container">
   <div class="hero-skills-track">
-    Swift • SwiftUI • iOS • PHP • JavaScript • HTML • CSS • MySQL • CakePHP • Firebase • REST APIs • AWS • Git
+Swift • SwiftUI • React & React Native • PHP • CakePHP • JavaScript • HTML • CSS • MySQL • Firebase • REST APIs • AWS • Git
   </div>
   <div class="hero-skills-track">
-    Swift • SwiftUI • iOS • PHP • JavaScript • HTML • CSS • MySQL • CakePHP • Firebase • REST APIs • AWS • Git
+Swift • SwiftUI • React & React Native • PHP • CakePHP • JavaScript • HTML • CSS • MySQL • Firebase • REST APIs • AWS • Git
   </div>
   <div class="hero-skills-track">
-    Swift • SwiftUI • iOS • PHP • JavaScript • HTML • CSS • MySQL • CakePHP • Firebase • REST APIs • AWS • Git
+Swift • SwiftUI • React & React Native • PHP • CakePHP • JavaScript • HTML • CSS • MySQL • Firebase • REST APIs • AWS • Git
   </div>
 </div>
 
