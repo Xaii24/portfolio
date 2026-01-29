@@ -64,19 +64,19 @@
 
 .md-global-text p {
     font-size: 1.2rem;
-    margin-bottom: 30px;
+    margin-bottom: 0px;
     font-weight: 400;
 }
 
 .md-global-text ul {
     list-style: none;
     padding-left: 0;
-    margin-bottom: 20px;
+    margin-bottom: -15px;
 }
 
 .md-global-text ul li {
     margin-bottom: 6px;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     position: relative;
     padding-left: 24px;
     font-weight: 200;

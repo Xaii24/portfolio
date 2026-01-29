@@ -64,8 +64,8 @@
 .ordering-system-section .portfolio-text ul li {
     position: relative;
     padding-left: 24px; /* space for custom bullet */
-    margin-bottom: 10px;
-    font-size: 1.2rem; /* adjust to match chat section */
+    margin-bottom: 0px;
+    font-size: 1.1rem; /* adjust to match chat section */
     font-weight: 200;
 }
 

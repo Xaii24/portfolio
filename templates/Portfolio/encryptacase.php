@@ -346,8 +346,8 @@ This provides a fast, engaging experience that mirrors modern messaging apps, wi
     
   </main>
 
- <footer class="site-footer">
-  &copy; <?php echo date('Y'); ?> Xaivery Rusconi. All rights reserved.
+<footer class="site-footer">
+  &copy;<?php;?>Xaivery Rusconi · All rights reserved.
 </footer>
 </body>
 </html>
