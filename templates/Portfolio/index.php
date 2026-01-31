@@ -159,14 +159,10 @@ Swift • SwiftUI • React & React Native • PHP • CakePHP • JavaScript �
 
 <?= $this->Html->link(
     '<i class="fas fa-shield-alt"></i> Encrypta Case Study',
-    [
-        'lang' => $this->request->getParam('lang'),
-        'controller' => 'Portfolio',
-        'action' => 'encryptacase',
-    ],
+    '/encrypta-case',
     ['class' => 'cta-btn', 'escape' => false]
 ) ?>
-    
+      
         </a>
       </div>
     </div>
