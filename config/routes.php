@@ -66,10 +66,6 @@ return function (RouteBuilder $routes): void {
          */
         $builder->connect('/pages/*', 'Pages::display');
 
-        $builder->connect('/encrypta-case', [
-            'controller' => 'Portfolio',
-            'action' => 'encryptacase',
-        ]);
         /*
          * Connect catchall routes for all controllers.
          *
